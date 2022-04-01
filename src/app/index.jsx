@@ -13,7 +13,7 @@ cache: new InMemoryCache()
       <ApolloProvider client={client}>
            <main className="text-1xl font-normal tracking-tight text-gray-800 text-centergit">
              Hello this is react js
-        </main>
+        </main> 🤖
       </ApolloProvider>
 
   );

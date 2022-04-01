@@ -3,7 +3,7 @@ import React from 'react';
 // import everything as REACTDOMClient from 'react-dom' module
 import * as ReactDOMClient from 'react-dom/client'
 import './index.css';
-import App from './app/index.tsx';
+import App from './app/index.jsx';
 
 // create a root container
 const rootContainer = document.getElementById('root');
