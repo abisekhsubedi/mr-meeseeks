@@ -1,12 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// newer way of using react DOM with createRoot  for react 18 and above
+// import everything as REACTDOMClient from 'react-dom' module
+import * as ReactDOMClient from 'react-dom/client'
 import './index.css';
 import App from './app';
 
+// create a root container
+const rootContainer = document.getElementById('root');
 
-ReactDOM.render(
+const root = ReactDOMClient.createRoot(rootContainer)
+
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+
 );

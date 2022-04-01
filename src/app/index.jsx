@@ -7,7 +7,7 @@ function App() {
     // create an instance of apolloclient
     const client = new ApolloClient({
 uri: 'https://graphql-pokemon2.vercel.app/',
-cache: InMemoryCache()
+cache: new InMemoryCache()
 
 
     })
