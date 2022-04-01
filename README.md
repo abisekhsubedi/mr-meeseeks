@@ -19,3 +19,9 @@
 +  no over fetching
 + no more multiple request for multiple resources
 + no more waterfall network request on nested data each client now doens't need to know the location of each service
+
+
+how to use grapql with react?
+ import appollo client & inmemorycache from the graphql node modules
+
+what's the great about graphql is, if we query once it's going to memonize it so if we query same data again it is going to hit the cache, data will be served from the cache reducing load to server
