@@ -3,16 +3,11 @@ import React from 'react';
 // import everything as REACTDOMClient from 'react-dom' module
 import * as ReactDOMClient from 'react-dom/client'
 import './index.css';
-import App from './app';
+import App from './app/index.tsx';
 
 // create a root container
 const rootContainer = document.getElementById('root');
 
 const root = ReactDOMClient.createRoot(rootContainer)
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-
-);
+root.render(<App/>);

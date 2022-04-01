@@ -1,8 +1,6 @@
 import React from 'react';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
-
-
 function App() {
     // create an instance of apolloclient
     const client = new ApolloClient({
