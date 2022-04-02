@@ -1,23 +1,7 @@
-import react from "react";
-import { useQuery, gql } from "@apollo/client";
-
-const GET_CHARACTERS = gql`
-  query {
-    characters {
-      results {
-        id
-        name
-        image
-      }
-    }
-  }
-`;
+import { useCharacter } from "../hooks/useCharacters";
 
 export const CharacterList = () => {
-  const { data, loading, error } = useQuery(GET_CHARACTERS);
-  //  obj.loading
-  //  obj.error
-  //  obj.data
+  const { data, loading, error } = useCharacter();
 
   if (loading) return <div className="bg-blue-200"> loading...</div>;
   if (error) return <div className="bg-red-200"> something is wrong</div>;
