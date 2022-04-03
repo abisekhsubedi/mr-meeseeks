@@ -9,7 +9,7 @@ export const CharacterList = () => {
 
   return (
     <>
-      <section className="w-full m-4 text-left">
+      <section className="w-full m-4 text-left ">
         <h2 className="mb-4 font-serif text-2xl font-bold">Character list</h2>
         {/* render cards with the data from graphql api  */}
         <div className="flex flex-col gap-6 md:w-full md:flex-row md:flex md:flex-wrap ">
@@ -17,7 +17,7 @@ export const CharacterList = () => {
             return (
               <Link
                 to={`/${character.id}`}
-                className="flex flex-col p-4 bg-white rounded"
+                className="flex flex-col p-4 bg-white rounded hover:scale-[1.022] hover:transition-all hover:shadow-sm"
                 key={character.id}
               >
                 <img src={character.image} alt={character.name} />

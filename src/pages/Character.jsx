@@ -1,48 +1,23 @@
 import { useCharacter } from "../hooks/useCharacter";
-import { Link, useParams, useNavigate } from "react-router-dom";
-import { HiArrowLeft, HiHome } from "react-icons/hi";
+import { Link, useParams } from "react-router-dom";
+import Error from "./error";
 
 // react functional component
 function Character() {
-  const navigate = useNavigate();
   const { id } = useParams();
   const { loading, data, error } = useCharacter(id);
 
   if (loading) return <div>loading</div>;
 
-  if (error)
-    return (
-      <div className="flex flex-col items-center justify-center w-full h-[100vh]  text-center gap-4">
-        <h1 className="text-5xl">404 not found</h1>
-        <div className="flex flex-row">
-          <button
-            className="flex items-center gap-2 p-4 pl-6 pr-6 text-indigo-800 align-bottom bg-indigo-200 rounded-xl"
-            onClick={() => {
-              navigate(-1);
-            }}
-          >
-            {" "}
-            <HiArrowLeft />
-            go back
-          </button>
-          <button className="flex items-center gap-2 p-4 pl-6 pr-6 text-indigo-800 align-bottom bg-indigo-200 rounded-xl">
-            {" "}
-            <HiHome />
-            <Link to="/">go home</Link>
-          </button>
-        </div>
-      </div>
-    );
+  if (error) return <Error />;
 
   if (data)
     return (
       <div className="p-4 bg-slate-100 ">
         <nav className="mb-4 underline">
-          <ul>
-            <Link to="/">
-              <span>go back</span>
-            </Link>
-          </ul>
+          <Link to="/">
+            <span>go back</span>
+          </Link>
         </nav>
         <main>
           <div>

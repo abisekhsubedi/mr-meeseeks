@@ -3,6 +3,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Home } from "../pages/home";
 import Character from "../pages/Character";
+import { Search } from "../components/search";
 
 function App() {
   // create an instance of apolloclient
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:id" element={<Character />} />
+          <Route path="/search" element={<Search />} />
           <Route path="*" element={<div> 404 not found</div>} />
         </Routes>
       </Router>

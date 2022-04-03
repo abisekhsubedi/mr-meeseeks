@@ -1,7 +1,7 @@
 import { SiReact, SiGraphql, SiGithub, SiLinkedin } from "react-icons/si";
 import { MdClose } from "react-icons/md";
 import { CharacterList } from "../CharacterList";
-
+// import { Search } from "../../components/search";
 function closeBanner() {
   console.log("click");
 }
@@ -27,10 +27,11 @@ export const Home = () => {
           </div>
           <MdClose
             fill="white"
-            className="w-8 h-8 -translate-y-2 cursor-pointer "
+            className="-translate-y-2 cursor-pointer "
             onClick={closeBanner}
           />
         </div>
+        {/* <Search /> */}
         <section className="flex ">
           <CharacterList />
         </section>
