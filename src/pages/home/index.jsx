@@ -21,16 +21,10 @@ export const Home = () => {
               accessible &amp; perfomant UI with react.
             </span>
           </div>
-          <MdClose
-            fill="white"
-            className="-translate-y-2 cursor-pointer "
-            onClick={closeBanner}
-          />
+          <MdClose fill="white" className="-translate-y-2 cursor-pointer " />
         </div>
         {/* <Search /> */}
-        <section className="flex ">
-          <CharacterList />
-        </section>
+        <section className="flex ">{/* <CharacterList /> */}</section>
       </main>
       <footer className="flex flex-row justify-center gap-3 pt-6 pb-6">
         <a
