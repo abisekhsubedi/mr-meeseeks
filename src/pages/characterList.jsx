@@ -1,7 +1,7 @@
 import { useCharacters } from "../hooks/useCharacters";
 import { Link } from "react-router-dom";
 
-export const CharacterList = () => {
+export default function CharacterList() {
   const { data, loading, error } = useCharacters();
 
   if (loading) return <div className="bg-blue-200"> loading...</div>;
@@ -30,4 +30,4 @@ export const CharacterList = () => {
       </section>
     </>
   );
-};
+}

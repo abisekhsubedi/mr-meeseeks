@@ -1,6 +1,6 @@
 import { SiReact, SiGraphql, SiGithub, SiLinkedin } from "react-icons/si";
 import { MdClose } from "react-icons/md";
-// import CharacterList from "../CharacterList";
+import CharacterList from "../CharacterList";
 
 export const Home = () => {
   return (
@@ -24,7 +24,9 @@ export const Home = () => {
           <MdClose fill="white" className="-translate-y-2 cursor-pointer " />
         </div>
         {/* <Search /> */}
-        <section className="flex ">{/* <CharacterList /> */}</section>
+        <section className="flex ">
+          <CharacterList />
+        </section>
       </main>
       <footer className="flex flex-row justify-center gap-3 pt-6 pb-6">
         <a
