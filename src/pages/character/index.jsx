@@ -1,6 +1,6 @@
-import { useCharacter } from "../hooks/useCharacter";
 import { Link, useParams } from "react-router-dom";
-import Error from "./error";
+import Error from "../error";
+import { useCharacter } from "../../hooks/useCharacter";
 
 // react functional component
 function Character() {

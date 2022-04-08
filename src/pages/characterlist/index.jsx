@@ -1,5 +1,5 @@
-import { useCharacters } from "../hooks/useCharacters";
 import { Link } from "react-router-dom";
+import { useCharacters } from "../../hooks/useCharacters";
 
 export default function CharacterList() {
   const { data, loading, error } = useCharacters();

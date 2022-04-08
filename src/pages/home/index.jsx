@@ -1,6 +1,6 @@
 import { SiReact, SiGraphql, SiGithub, SiLinkedin } from "react-icons/si";
 import { MdClose } from "react-icons/md";
-import CharacterList from "../CharacterList";
+import CharacterList from "../characterlist";
 
 export const Home = () => {
   return (

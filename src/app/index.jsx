@@ -2,7 +2,7 @@ import React from "react";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Home } from "../pages/home";
-import Character from "../pages/Character";
+import Character from "../pages/character";
 import { Search } from "../components/search";
 
 function App() {
